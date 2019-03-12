@@ -1,0 +1,52 @@
+{
+  "VIPLists": [
+    {
+      "id": 1,
+      "allName": "北京xx科技有限公司",
+      "shortName": "xx科技",
+      "profession": "法律",
+      "region": "北京",
+      "filed": "房地产交易、不良资产、破产重组",
+      "contact": "刘海涛",
+      "position": "律师",
+      "phone": "18888888888",
+      "email": "panyujia@kwm.com",
+      "telephone": "010-888888"
+    },
+    {
+      "id": 2,
+      "allName": "北京xxx科技有限公司",
+      "shortName": "xxx科技",
+      "profession": "法律",
+      "region": "北京",
+      "filed": "房地产交易、不良资产、破产重组",
+      "contact": "李四",
+      "position": "律师",
+      "phone": "18888888888",
+      "email": "panyujia@kwm.com",
+      "telephone": "010-888888"
+    },
+    {
+      "id": 3,
+      "allName": "北京xxxx科技有限公司",
+      "shortName": "xxxx科技",
+      "profession": "法律",
+      "region": "北京",
+      "filed": "房地产交易、不良资产、破产重组",
+      "contact": "张三",
+      "position": "律师",
+      "phone": "18888888888",
+      "email": "panyujia@kwm.com",
+      "telephone": "010-888888"
+    }
+  ],
+  "infoLists": [
+    {
+      "infoName": "金杜国际中心重大交易",
+      "infoContain": "金杜助力充煤澳洲香港联交所上市，实现资本市场华丽三级跳...",
+      "infoDate": "2018-12-19",
+      "infoWatch": "390",
+      "infoImg": ""
+    }
+  ]
+}

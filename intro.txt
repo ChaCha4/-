@@ -1,0 +1,66 @@
+**用VUE全家桶实现一个移动端的APP开发**
+
+**项目展示：https://idoc.mockplus.cn/run/M0go4lqn26**
+
+## 前言
+
+## 需要安装的
+
+１．vuex　状态管理：npm i vuex
+
+2.mint ui:npm i mint-ui -S
+
+3.axios:用来获取json数据
+
+## 开发过程
+
+1.项目主要结构
+    -api
+        -db.json
+    -src
+        -assets
+        -components
+            -Home.vue：首页模块
+            -ItemList.vue
+            -Personal.vue：我的模块
+            -Plat.vue：平台模块
+            -Project.vue：项目模块
+            -AllVip.vue:平台模块下的子模块--所有VIP
+            -PlatAbout.vue:平台模块下的子模块--关于平台
+            -PlatConnect.vue:平台模块下的子模块--合作机构
+            -PlatHelp.vue:平台模块下的子模块--使用帮助
+            -PlatInfo.vue:平台模块下的子模块--投融资讯
+            -VipApply.vue:平台模块下的子模块--所有VIP下的子模块----申请VIP账号
+            -VipDetails.vue:平台模块下的子模块--所有VIP下的子模块--VIP详情
+            -VipRule.vue:平台模块下的子模块--所有VIP下的子模块--VIP规则
+        -App.vue
+        -main.js
+        -router.js
+        -store
+            -index.js
+
+2.由于tabbar和header的标题有关联，因此需要将header的标题作为state放到store中，点击对应的tabbar会修改state值，然后在App.vue中取出state的title值，这样就可以实现tabbar与header标题对应了。
+
+**需要注意的是，在main.js中引入store，不引入就使用的话会报错**
+
+3.在使用mint ui中的search的时候需要注意v-model
+
+4.vue router中的嵌套路由，每个子路由里面可以嵌套 多个组件，子组件又有导航和路由容器。
+<router-link></router-link>
+//注意区分动态路由和子路由，动态路由跳转的是同一个页面，子路由要写多个路由组件
+
+(后来发现，并不是用嵌套路由，因为嵌套路由是展示在plat这个页面里，在plat页面展示子路由里的内容，所以改用普通子路由跳转，在router.js里面新增几个和home并列的对象属性即可)
+
+5.如何解决，点击/plat/xx路径之后，app.vue中的mt-header依然存在？
+
+在每个/plat/xx内加一个mt-header控制，然后修改store即可。
+
+6.若想实现底部tabbar栏永远固定在底部，中间主要内容部分可以滚动，需要给整个wrap设定一个height值为100vh
+
+7.项目中哪些需要获取json数据？
+①平台模块中的投融资讯需要发送axios请求获取json数据，定义一个资讯详情页
+②平台模块中的VIP详情也需要，定义一个VIP详情页：
+id
+allName(VIP全称)、shortName(VIP简称)、profession(行业)、region(地区)、filed(投融资领域)、contact(联系人)、position(职位)、phone(手机)、e-mail(邮箱)、telephone(座机)
+详情页用到了动态路由/plat/allVip/vipdetails/:id
+③还有项目详情，在首页展示和项目模块中会用到
