@@ -17,7 +17,9 @@ import {
   SwipeItem,
   Navbar,
   Cell,
-  Button
+  Button,
+  Field,
+  MessageBox
 } from 'mint-ui';
 // 引入vue路由组件
 import router from './router';
@@ -34,6 +36,7 @@ Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Search.name, Search);
 Vue.component(Cell.name, Cell);
+Vue.component(Field.name, Field);
 new Vue({
   render: h => h(App),
   router,

@@ -42,11 +42,69 @@
   ],
   "infoLists": [
     {
+      "id": 1,
       "infoName": "金杜国际中心重大交易",
       "infoContain": "金杜助力充煤澳洲香港联交所上市，实现资本市场华丽三级跳...",
       "infoDate": "2018-12-19",
       "infoWatch": "390",
-      "infoImg": ""
+      "infoImg": "https://github.com/ChaCha4/vue-lastProject/blob/master/src/assets/plat2_02_02.png?raw=true",
+      "infoAllContain": "2018年12月6日，崇州煤业股份有限公司（简称“崇州煤业”，600188.SH，01171.HK）下属Yancoal Australia Limited（简称“充煤澳洲”，ASX：YAL）在香港联合交易所有限公司（“香港联交所”）完成公开发行股票并上市，实现了在澳大利亚证券交易所（“澳交所”）和香港联交所的双地上市（Dual Primary Listing），崇州煤业也由此构建了境内外四地上市平台，这也是充煤澳洲自2012年澳洲上市、2017年并购联合煤炭以来的第"
+    },
+    {
+      "id": 2,
+      "infoName": "金杜国际中心重大交易",
+      "infoContain": "金杜助力充煤澳洲香港联交所上市，实现资本市场华丽三级跳...",
+      "infoDate": "2018-12-19",
+      "infoWatch": "390",
+      "infoImg": "https://github.com/ChaCha4/vue-lastProject/blob/master/src/assets/plat2_02_02.png?raw=true",
+      "infoAllContain": "2018年12月6日，崇州煤业股份有限公司（简称“崇州煤业”，600188.SH，01171.HK）下属Yancoal Australia Limited（简称“充煤澳洲”，ASX：YAL）在香港联合交易所有限公司（“香港联交所”）完成公开发行股票并上市，实现了在澳大利亚证券交易所（“澳交所”）和香港联交所的双地上市（Dual Primary Listing），崇州煤业也由此构建了境内外四地上市平台，这也是充煤澳洲自2012年澳洲上市、2017年并购联合煤炭以来的第"
+    },
+    {
+      "id": 3,
+      "infoName": "金杜国际中心重大交易",
+      "infoContain": "金杜助力充煤澳洲香港联交所上市，实现资本市场华丽三级跳...",
+      "infoDate": "2018-12-19",
+      "infoWatch": "390",
+      "infoImg": "https://github.com/ChaCha4/vue-lastProject/blob/master/src/assets/plat2_02_02.png?raw=true",
+      "infoAllContain": "2018年12月6日，崇州煤业股份有限公司（简称“崇州煤业”，600188.SH，01171.HK）下属Yancoal Australia Limited（简称“充煤澳洲”，ASX：YAL）在香港联合交易所有限公司（“香港联交所”）完成公开发行股票并上市，实现了在澳大利亚证券交易所（“澳交所”）和香港联交所的双地上市（Dual Primary Listing），崇州煤业也由此构建了境内外四地上市平台，这也是充煤澳洲自2012年澳洲上市、2017年并购联合煤炭以来的第"
+    }
+  ],
+  "proLists": [
+    {
+      "id": 1,
+      "watchNum": 390,
+      "starNum": 390,
+      "proDate": "2018-12-19",
+      "proContact": "潘宇佳",
+      "proName": "客户欲收购香港上市壳公司",
+      "proContain": "现有一位在金融服务、健康管理、社会服务领域的中国潜在投资者，拟购买一家在美国上市的公司的壳资源，所需壳资源不限定于上述领域。此投资者已有一家NASDAQ的上市公司。",
+      "proMoney": "￥1000000",
+      "proId": "P201812200001",
+      "proType": "项目收购、项目合作",
+      "proTab": "壳资源",
+      "proRegion": "上海市",
+      "proField": "金融投资",
+      "proState": "未接洽",
+      "proIndate": "长期",
+      "isTop": true
+    },
+    {
+      "id": 2,
+      "watchNum": 390,
+      "starNum": 390,
+      "proDate": "2018-12-19",
+      "proContact": "潘宇佳",
+      "proName": "客户欲收购香港上市壳公司2",
+      "proContain": "现有一位在金融服务、健康管理、社会服务领域的中国潜在投资者，拟购买一家在美国上市的公司的壳资源，所需壳资源不限定于上述领域。此投资者已有一家NASDAQ的上市公司。",
+      "proMoney": "￥2000000",
+      "proId": "P201812200001",
+      "proType": "项目收购、项目合作",
+      "proTab": "壳资源",
+      "proRegion": "上海市",
+      "proField": "金融投资",
+      "proState": "未接洽",
+      "proIndate": "长期",
+      "isTop": false
     }
   ]
 }

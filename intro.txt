@@ -33,6 +33,11 @@
             -VipApply.vue:平台模块下的子模块--所有VIP下的子模块----申请VIP账号
             -VipDetails.vue:平台模块下的子模块--所有VIP下的子模块--VIP详情
             -VipRule.vue:平台模块下的子模块--所有VIP下的子模块--VIP规则
+            -PubPro.vue:我的模块中的发布项目
+            -MyPro.vue:我的模块中的我的项目
+            -MyShare.vue:我的模块中的我的分享
+            -MyVIP.vue:我的模块中的我的VIP
+            -MyContact.vue:我的模块中的我的联系合伙人
         -App.vue
         -main.js
         -router.js
@@ -58,9 +63,45 @@
 6.若想实现底部tabbar栏永远固定在底部，中间主要内容部分可以滚动，需要给整个wrap设定一个height值为100vh
 
 7.项目中哪些需要获取json数据？
-①平台模块中的投融资讯需要发送axios请求获取json数据，定义一个资讯详情页
+①平台模块中的投融资讯需要发送axios请求获取json数据，定义一个资讯详情页，咨询详情：
+id、infoName(资讯名)、infoContain(资讯简要)、infoDate(资讯时间)、infoWatch(浏览量)、infoImg(咨讯图片)、infoAllContain(资讯全部内容)
 ②平台模块中的VIP详情也需要，定义一个VIP详情页：
 id
 allName(VIP全称)、shortName(VIP简称)、profession(行业)、region(地区)、filed(投融资领域)、contact(联系人)、position(职位)、phone(手机)、e-mail(邮箱)、telephone(座机)
 详情页用到了动态路由/plat/allVip/vipdetails/:id
 ③还有项目详情，在首页展示和项目模块中会用到
+
+8.在我的账户设置模块中遇到的问题：
+①点击姓名等可修改cell时，跳转到一个prompt。。。
+②需要填写表单的怎么用mint ui
+
+## 开发过程遇到的错误
+
+1.项目进行到一定阶段之后，在执行npm run serve之后会报一个err：Use /* eslint-disable */ to ignore all warnings in a file.
+
+**解决方案**
+
+这个涉及到vue-cli3的eslint配置问题，可以打开package.json文件，找到eslint配置段：
+
+```js
+  "eslintConfig": {
+     "root": true,////此项是用来告诉eslint找当前配置文件不能往父级查找
+     "env": {
+       "node": true//此项指定环境的全局变量，下面的配置指定为node环境
+     },
+     "extends": [// 此项是用来配置vue.js风格，就是说写代码的时候要规范的写，如果你使用vs-code我觉得应该可以避免出错
+       "plugin:vue/essential",
+       "@vue/standard"[// 之前这里是："eslint:recommended"，删掉即可，就不会报错了]
+     ],
+     "rules": {//规则配置写在这里
+       "indent": [1, 4]
+     },
+     "parserOptions": {
+       "parser": "babel-eslint"//此项是用来指定eslint解析器的，解析器必须符合规则，babel-eslint解析器是对babel解析器的包装使其与ESLint解析
+     }
+   },
+```
+
+## 项目反思
+
+1.项目执行到中间过程后会发现，components的文件很多，没有一个子分类看起来特别麻烦，影响到了项目执行的效率，下次做项目一定记得给每个模块建一个文件夹。
