@@ -56,7 +56,15 @@
           <span>手机：1888888888</span>
         </div>
       </div>
-      <div class="proDetail proDetail4"></div>
+      <div class="proDetail proDetail4">
+        <span>评论</span>
+        <div class="comments"></div>
+      </div>
+    </div>
+    <div class="detailBottom">
+      <img src="../assets/headImg01_07.png">
+      <input type="text">
+      <mt-button type="primary">发送</mt-button>
     </div>
   </div>
 </template>

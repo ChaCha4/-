@@ -74,6 +74,7 @@ allName(VIP全称)、shortName(VIP简称)、profession(行业)、region(地区)�
 8.在我的账户设置模块中遇到的问题：
 ①点击姓名等可修改cell时，跳转到一个prompt。。。
 ②需要填写表单的怎么用mint ui
+③mint ui中的tabbar如何设置在除了home、plat、project、personal以外的页面隐藏
 
 ## 开发过程遇到的错误
 

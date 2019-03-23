@@ -28,6 +28,7 @@ export default {
   watch: {
     selected() {
       const url = this.selected === "home" ? "/" : `/${this.selected}`;
+      console.log(this.selected);
       this.$router.history.push(url);
     }
   }
